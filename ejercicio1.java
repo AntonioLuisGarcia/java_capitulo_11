@@ -9,6 +9,7 @@
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
+import print.consolePrint;
 
 public class ejercicio1{
     public static void main(String[] args) {
@@ -20,12 +21,14 @@ public class ejercicio1{
         try{
 
             BufferedWriter bw = new BufferedWriter(new FileWriter("primos.dat"));
-            bw.write(nPrimo + ", ");
+            String text = nPrimo + ", ";
+            consolePrint.print(text,bw);
             
             do{    
                 nPrimo = siguientePrimo(nPrimo);
                 cadena = (nPrimo==499 ? nPrimo + "": nPrimo + ", ");
                 bw.write(cadena);
+                consolePrint.print(text, bw);
             }while(nPrimo<499);
 
             bw.close();
