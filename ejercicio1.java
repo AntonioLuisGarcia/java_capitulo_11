@@ -28,8 +28,7 @@ public class ejercicio1{
                 nPrimo = siguientePrimo(nPrimo);
                 cadena = (nPrimo==499 ? nPrimo + "\n": nPrimo + ", \n");
                 bw.write(cadena);
-                consolePrint.print(cadena, bw);
-            }while(nPrimo<498);
+            }while(nPrimo<499);
 
             bw.close();
             
