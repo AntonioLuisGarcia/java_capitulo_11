@@ -21,14 +21,14 @@ public class ejercicio1{
         try{
 
             BufferedWriter bw = new BufferedWriter(new FileWriter("primos.dat"));
-            String text = nPrimo + ", ";
+            String text = nPrimo + ", \n";
             consolePrint.print(text,bw);
             
             do{    
                 nPrimo = siguientePrimo(nPrimo);
-                cadena = (nPrimo==499 ? nPrimo + "": nPrimo + ", ");
+                cadena = (nPrimo==499 ? nPrimo + "\n": nPrimo + ", \n");
                 bw.write(cadena);
-                consolePrint.print(text, bw);
+                consolePrint.print(cadena, bw);
             }while(nPrimo<499);
 
             bw.close();
