@@ -32,6 +32,15 @@
             "mainClass": "ejercicio3",
             "projectName": "java_capitulo_11_ba0e5fb3",
             "args": "primos.dat primos.dat mezclaPrimos.dat"
-        }
+        },
+
+        {
+            "type": "java",
+            "name": "Launch ejercicio4",
+            "request": "launch",
+            "mainClass": "ejercicio4",
+            "projectName": "java_capitulo_11_ba0e5fb3",
+            "args": "wordlist.txt wordlist_sort.txt"
+        },
     ]
 }
