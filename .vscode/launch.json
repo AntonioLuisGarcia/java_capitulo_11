@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch hi",
+            "request": "launch",
+            "mainClass": "hi",
+            "projectName": "java_capitulo_11_ba0e5fb3"
+        },
+        {
+            "type": "java",
             "name": "Launch Current File",
             "request": "launch",
             "mainClass": "${file}"
@@ -33,7 +40,6 @@
             "projectName": "java_capitulo_11_ba0e5fb3",
             "args": "primos.dat primos.dat mezclaPrimos.dat"
         },
-
         {
             "type": "java",
             "name": "Launch ejercicio4",
@@ -42,5 +48,13 @@
             "projectName": "java_capitulo_11_ba0e5fb3",
             "args": "wordlist.txt wordlist_sort.txt"
         },
+        {
+            "type": "java",
+            "name": "Launch ejercicio5",
+            "request": "launch",
+            "mainClass": "ejercicio5",
+            "projectName": "java_capitulo_11_ba0e5fb3",
+            "args": "hi.txt hi.java"
+        }
     ]
 }
