@@ -30,7 +30,8 @@
             "name": "Launch ejercicio3",
             "request": "launch",
             "mainClass": "ejercicio3",
-            "projectName": "java_capitulo_11_ba0e5fb3"
+            "projectName": "java_capitulo_11_ba0e5fb3",
+            "args": "primos.dat primos.dat mezclaPrimos.dat"
         }
     ]
 }
