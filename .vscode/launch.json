@@ -55,6 +55,14 @@
             "mainClass": "ejercicio5",
             "projectName": "java_capitulo_11_ba0e5fb3",
             "args": "hi.txt hi.java"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio5_2",
+            "request": "launch",
+            "mainClass": "ejercicio5_2",
+            "projectName": "java_capitulo_11_ba0e5fb3",
+            "args": "hi.txt hi.java"
         }
     ]
 }
