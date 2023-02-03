@@ -32,6 +32,7 @@ public class WordCounter {
     public void readText(){
 
         try{
+            
             String line = br.readLine();
             
             while(line != null){
