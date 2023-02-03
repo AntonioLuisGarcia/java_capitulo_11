@@ -63,6 +63,15 @@
             "mainClass": "ejercicio5_2",
             "projectName": "java_capitulo_11_ba0e5fb3",
             "args": "hi.txt hi.java"
+        },
+        {
+            "type": "java",
+            "name": "Launch ejercicio6",
+            "request": "launch",
+            "mainClass": "ejercicio6",
+            "projectName": "java_capitulo_11_ba0e5fb3",
+            "args": "wordlist.txt España"
         }
     ]
+    
 }
