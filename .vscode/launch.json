@@ -6,6 +6,14 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch wordsCounter",
+            "request": "launch",
+            "mainClass": "practices.wordsCounter",
+            "projectName": "java_capitulo_11_ba0e5fb3",
+            "args": "text1.txt listoftext1.txt"
+        },
+        {
+            "type": "java",
             "name": "Launch hi",
             "request": "launch",
             "mainClass": "hi",

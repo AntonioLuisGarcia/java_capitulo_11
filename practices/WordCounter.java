@@ -33,12 +33,11 @@ public class WordCounter {
 
         try{
             String line = br.readLine();
-            String[] words = line.split(" ");
-
+            
             while(line != null){
+                String[] words = line.split(" ");
                 counter(words);
                 line = br.readLine();
-                words = line.split(line);
             }
             br.close();
 
@@ -60,13 +59,15 @@ public class WordCounter {
 
     public void generateWordCounter(){
         
-        for(Map.Entry<String,Integer> word : wordCounter.entrySet()){
-            try{
+        try{
+
+            for(Map.Entry<String,Integer> word : wordCounter.entrySet()){
                 bw.write(word.getKey() + " - " + word.getValue() + " veces");
                 bw.newLine();
-            }catch(IOException io){
-
             }
+
+            bw.close();
+        }catch(IOException io){
         }
     }
 
@@ -76,7 +77,7 @@ public class WordCounter {
         String text = "";
 
         for(Map.Entry<String,Integer> word : wordCounter.entrySet()){
-                text += word.getKey() + " - " + word.getValue() + " veces\n";
+            text += word.getKey() + " - " + word.getValue() + " veces\n";
         }
 
         return text;
