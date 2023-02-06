@@ -11,7 +11,9 @@ public class ejercicio4 {
         
         try {
             BufferedReader br = new BufferedReader(new FileReader(args[0]));
-            BufferedWriter bw = new BufferedWriter(new FileWriter(args[1]));
+            int pos = ((args[0].lastIndexOf(".txt")));
+            String destiny = ((args[0].substring(0,pos)) + "sort.txt");
+            BufferedWriter bw = new BufferedWriter(new FileWriter(destiny));
             ArrayList<String> words = new ArrayList<>();
             String line = br.readLine();
 
