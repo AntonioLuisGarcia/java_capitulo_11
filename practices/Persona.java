@@ -36,5 +36,8 @@ public class Persona {
         this.apellido = apellido;
     }
 
-    
+    @Override
+    public String toString(){
+        return nombre + " " + apellido + " " + edad + " años.";
+    }
 }

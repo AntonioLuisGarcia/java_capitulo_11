@@ -5,6 +5,7 @@ import java.io.BufferedReader;
 import java.io.FileWriter;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.ArrayList;
 
 
 public class lectorjson {
@@ -13,6 +14,7 @@ public class lectorjson {
 
             BufferedReader br = new BufferedReader(new FileReader(args[0]));
             //BufferedWriter bw = new BufferedWriter(new FileWriter(args[0]));
+            ArrayList<Persona> personas = new ArrayList<>();
             String line= "";
             boolean object = false;
             int inicioVariable = 0;
@@ -62,9 +64,12 @@ public class lectorjson {
                         line = br.readLine();
                     }
 
-                    //creamos objecto
+                    personas.add(new Persona(edad, nombre, apellido));
                 }
+            }
 
+            for(Persona p: personas){
+                System.out.println(p);
             }
 
         }catch(IOException io){
