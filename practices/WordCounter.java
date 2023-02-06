@@ -36,7 +36,7 @@ public class WordCounter {
             String line = br.readLine();
             
             while(line != null){
-                String[] words = line.split(" ");
+                String[] words = line.split("[\\s,\\.\\(\\)]+");
                 counter(words);
                 line = br.readLine();
             }
