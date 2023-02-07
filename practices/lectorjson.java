@@ -24,7 +24,7 @@ public class lectorjson {
             String nombreVariable = "";
             String nombre = "";
             String apellido = "";
-            int edad = 0;
+            Integer edad = 0;
             int contador= 0;
 
 
@@ -69,9 +69,12 @@ public class lectorjson {
                         line = br.readLine();
                     //}
 
-                    if(contador==3 ){
+                    if(!object && contador == 3){
                         contador =0;
                         personas.add(new Persona(edad, nombre, apellido));
+                        edad = null;
+                        nombre = null;
+                        apellido = null;
                     }
             }
             br.close();
