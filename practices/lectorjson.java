@@ -77,7 +77,9 @@ public class lectorjson {
                         apellido = null;
                     }
             }
+            
             br.close();
+
             for(Persona p: personas){
                 System.out.println(p);
             }

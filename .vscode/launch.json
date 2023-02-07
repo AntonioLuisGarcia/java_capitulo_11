@@ -5,7 +5,14 @@
     "version": "0.2.0",
     "configurations": [
 
-
+        {
+            "type": "java",
+            "name": "Launch Stats",
+            "request": "launch",
+            "mainClass": "Stats",
+            "projectName": "java_capitulo_11_ba0e5fb3",
+            "args": "quijote.txt "
+        },
         {
             "type": "java",
             "name": "Launch lectorjson",
