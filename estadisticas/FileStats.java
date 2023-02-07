@@ -75,7 +75,6 @@ public class FileStats {
     }
 
     public ArrayList<Word> getDifferentWords(){
-        
         HashMap<String,Word> wordsAuxiliar = new HashMap<>();
         ArrayList<Word> words = new ArrayList<>();
 
