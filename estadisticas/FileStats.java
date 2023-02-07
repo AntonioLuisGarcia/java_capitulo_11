@@ -61,7 +61,7 @@ public class FileStats {
         return list; 
     }
 
-    private String replaceIfNotAlphabetic(String text, char replaceBy){
+    private static String replaceIfNotAlphabetic(String text, char replaceBy){
         for(int i = 0 ; i< text.length(); i++){
             if(!Character.isAlphabetic(text.charAt(i))){
                 text = text.replace(text.charAt(i),replaceBy);
