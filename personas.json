@@ -1,0 +1,22 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "nombre":"Javier",
+            "edad":"14",
+            "apellido": "Gonzalez"
+        },
+        {
+            "edad":"18",
+            "nombre":"Antonio",
+            "apellido": "Garcia"
+        },
+        {
+            "edad":"33",
+            "nombre":"Jose",
+            "apellido": "Perez Palazon"
+        }
+
+    ]
+    
+}
