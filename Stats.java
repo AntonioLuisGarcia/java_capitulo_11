@@ -26,8 +26,6 @@ public class Stats {
             System.out.println(difWords);
         }catch(Exception e){
             System.out.println("Error");
-        }
-
-        
+        }        
     }
 }
